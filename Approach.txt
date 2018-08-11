@@ -1,0 +1,34 @@
+American Express Artificial Intelligence Problem statement 2: Supervised Modeling with Emphasis on LAUC
+
+The goal is to build a supervised model on a sample of fraud data where both AUC and LAUC is as strong as possible.
+_______________________________________________________________
+Dataset:
+406709 rows and 54 variables (10 Numerical and 44 Categorical)
+_______________________________________________________________
+Type of problem:
+Binary classification problem
+_______________________________________________________________
+Approach:
+
+While working on a problem, analysing data is more important than applying a model, which helps us to preprocess the data in a better way and inturn increases the efficiency of model. Also, AUC curve on training set at each stage of the modelling is analysed.
+
+Some of the preprocessing steps that are applied to the dataset:
+1. Data balancing: As the data points in both the classes are around 2,00,000, there is no need to balance data. The data is balanced already.
+2. If there are two or more columns that are highly correlated with each other, then it really affects the model's accuracy. But, there are no columns in the given data, that have correlation more than 0.95.
+3. If there are duplicates in the training data, then there is a high chance of overfitting which affects the accuracy/score when tested on new data. Even though the data set has around 4 lakh columns, there are no duplicate rows in the data.
+4. If there are any constant columns in the dataset, there is no use to use that feature to train the data. But, there are no constant columns in the dataset.
+
+As some of the sklearn implementations don't support categorical variables(xgboost supports this), I have converted the categorical columns into numbers using LabelEncoder. Now, the features can be used by an algorithm. The categorical features are sent as it is for the supported algorithms.
+
+Feature selection and hyperparameter tuning are some of the steps we need to concentrate more to make a good model.
+
+As we know that, tree-based algorithms work for most of the cases. I was very keen to apply these algorithms to this dataset and tune accordingly based on the intuition. At this step, I was keen on extracting the top features that are contributing to classify.
+I applied XGBoost and Random Forest algorithms separately on the dataset. The score was fine on the test data, but not extraordinary. 
+So, I have analysed the topmost features that are contributing to classify the data for both the algorithms separately. Based on the intuition after seeing the feature importance of the features, I have chosen top 27 features from the XGBoost and top 34 features from the random forest. After combining(union) the features, I was left with 34 unique feature columns. This helped me to remove the unnecessary features from the data and reduced the feature set from 54 to 34.
+
+I again started modelling on the extracted feature set to increase the efficiency of the model. At this step, I was keen on tuning the hyperparameters.
+1. Random forest couldn't increase the score than before. It was almost the same as I got before considering top features.
+2. LightGBM worked well and increased the score a lit bit after tuning the hyperparameters and the model was run for 1,00,000 iterations.
+3. XGBoost outperformed all the models that I have trained. After trying a different set of hyperparameters based on the intuition, I was able to increase the score.
+
+Final model: XGBoost trained on the features that are selected using Random Forest and XGBoost.
