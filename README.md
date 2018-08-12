@@ -12,7 +12,7 @@
 - 16 Days 12 hours
 
 ## Rank:
-- XXX out of XXXX participants
+- XXX out of XXXX participants (Will be updated once the final ranks are released)
 
 ## Language:
 - Python
