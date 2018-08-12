@@ -9,7 +9,7 @@
 - Different techniques to improve the accuracy.
 
 ## Challenge Time: 
-- 16 Days 12 hours (I worked on this problem for 6 days.)
+- 16 Days 12 hours
 
 ## Rank:
 - XXX out of XXXX participants
@@ -18,9 +18,10 @@
 - Python
 
 ## Files:
-- [Supervised_Modeling_with_Emphasis_on_LAUC.ipynb](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/Supervised_Modeling_with_Emphasis_on_LAUC.ipynb)
-- [Approach](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/Approach.txt)
-- [Scores of different algorithms I have tried during the challenge](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/Accuracy.txt)
+- [Final code](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/Final_code.ipynb) - Well commented and contains explanation of each step of my approach.
+- [Supervised_Modeling_with_Emphasis_on_LAUC.ipynb](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/Supervised_Modeling_with_Emphasis_on_LAUC.ipynb) - Not commented properly and not organised.
+- [Approach file](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/Approach.txt)
+- [Final predictions](https://github.com/Abhishekmamidi123/Supervised-Modeling-with-Emphasis-on-LAUC/blob/master/final_predictions.csv)
 
 ## Developer:
 - M Ratna Abhishek (Abhishek mamidi)
