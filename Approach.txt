@@ -8,6 +8,12 @@ _______________________________________________________________
 Type of problem:
 Binary classification problem
 _______________________________________________________________
+Language: Python
+Editor: Jupyter notebook
+Libraries used: Numpy, Pandas, sklearn, xgboost, lightgbm, matplotlib, seaborn
+_______________________________________________________________
+Jupyter notebook is well commented explaining each step of my approach.
+_______________________________________________________________
 Approach:
 
 While working on a problem, analysing data is more important than applying a model, which helps us to preprocess the data in a better way and inturn increases the efficiency of model. Also, AUC curve on training set at each stage of the modelling is analysed.
@@ -31,4 +37,4 @@ I again started modelling on the extracted feature set to increase the efficienc
 2. LightGBM worked well and increased the score a lit bit after tuning the hyperparameters and the model was run for 1,00,000 iterations.
 3. XGBoost outperformed all the models that I have trained. After trying a different set of hyperparameters based on the intuition, I was able to increase the score.
 
-Final model: XGBoost trained on the features that are selected using Random Forest and XGBoost.
+Final model: Final model was averge of 2XGBoost models of two different set of hyperparameters.
